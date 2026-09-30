@@ -1,0 +1,102 @@
+//---------------------- V E N T A ----------------------
+package logica;
+
+import java.time.LocalDateTime;
+
+public class logicaVenta {
+    //---------------- ATRIBUTOS ----------------
+    private int id_Venta;
+    private LocalDateTime fecha_realizacion;
+    private double total;
+    private String nit;
+    private String metodo_pago;
+    private String estado;
+    private int id_Usuario;
+
+    //--------------- CONSTRUCTOR ---------------
+
+    public logicaVenta() {
+    }
+
+    public logicaVenta(
+            int id_Venta,
+            LocalDateTime fecha_realizacion,
+            double total,
+            String nit,
+            String metodo_pago,
+            String estado,
+            int id_Usuario
+    ) {
+        this.id_Venta = id_Venta;
+        this.fecha_realizacion = fecha_realizacion;
+        this.total = total;
+        this.nit = nit;
+        this.metodo_pago = metodo_pago;
+        this.estado = estado;
+        this.id_Usuario = id_Usuario;
+    }
+
+    //---------------- SETTERS Y GETTERS --------------
+
+    public int getId_Venta() {
+        return id_Venta;
+    }
+
+    public void setId_Venta(int id_Venta) {
+        this.id_Venta = id_Venta;
+    }
+
+    public LocalDateTime getFecha_realizacion() {
+        return fecha_realizacion;
+    }
+
+    public void setFecha_realizacion(LocalDateTime fecha_realizacion) {
+        this.fecha_realizacion = fecha_realizacion;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public String getNit() {
+        return nit;
+    }
+
+    public void setNit(String nit) {
+        this.nit = nit;
+    }
+
+    public String getMetodo_pago() {
+        return metodo_pago;
+    }
+
+    public void setMetodo_pago(String metodo_pago) {
+        this.metodo_pago = metodo_pago;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public int getId_Usuario() {
+        return id_Usuario;
+    }
+
+    public void setId_Usuario(int id_Usuario) {
+        this.id_Usuario = id_Usuario;
+    }
+
+    //----------------- TO STRING --------------------
+    @Override
+    public String toString() {
+        return "Venta #" + id_Venta;
+    }
+}

@@ -1,0 +1,37 @@
+# Java
+*.class
+
+# NetBeans
+/build/
+/dist/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+/nbproject/private/
+/nbproject/Makefile-*
+/nbproject/build-impl.xml
+/nbproject/nbactions.xml
+
+# Otros IDE
+.idea/
+*.iml
+.vscode/
+
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuración local / credenciales
+.env
+.env.*
+database.properties
+config-local.properties
